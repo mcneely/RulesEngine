@@ -1,0 +1,8 @@
+namespace: Org\Test
+rules:
+  'Simple Object Rule':
+    when:
+      - obj: 'SimpleObject'
+      - 'obj.value == 42'
+    then:
+      - 'SimpleObject.hasPassed = true'

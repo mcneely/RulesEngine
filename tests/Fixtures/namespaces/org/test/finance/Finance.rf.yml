@@ -1,0 +1,8 @@
+namespace: Org\Test\Finance
+rules:
+  'Finance Object Rule':
+    when:
+      'SimpleObjectTwo.getValue() == 5555'
+    then:
+      - 'SimpleObjectTwo.setString("Woo!")'
+      - 'SimpleObjectTwo.invalidFunction()'

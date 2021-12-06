@@ -1,0 +1,7 @@
+namespace: Org\Test\Function
+rules:
+  'Simple Object Rule':
+    when:
+      - 'filter(testArray, "value % 2 == 0") == [2,4,6,8,10]'
+    then:
+      - 'SimpleObject.hasPassed = true'
