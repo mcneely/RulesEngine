@@ -1,0 +1,7 @@
+namespace: Org\Test
+rules:
+  'Logistics Object Rule':
+    when:
+      'SimpleObject.getValue() == 42'
+    then:
+      'SimpleObject.setHasPassed(true)'
